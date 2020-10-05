@@ -36,16 +36,16 @@
 	},
 	{
 		"_id": "5c8a1d5b0190b214360dc031",
-		"name": "Mary Williams",
-		"email": "mary@gmail.com",
+		"name": "Victoria Gomez",
+		"email": "vickyg@email.com",
 		"role": "publisher",
 		"password": "123456"
 	},
 	{
 		"_id": "5c8a1d5b0190b214360dc032",
-		"name": "Sasha Ryan",
-		"email": "sasha@gmail.com",
-		"role": "publisher",
+		"name": "Samuel Klepper",
+		"email": "samk@email.com",
+		"role": "user",
 		"password": "123456"
 	},
 	{
