@@ -19,22 +19,22 @@ exports.register = asyncHandler(async (req, res, next) => {
   });
 
   // grab token and send to email
-  const confirmEmailToken = user.generateEmailConfirmToken();
+  // const confirmEmailToken = user.generateEmailConfirmToken();
 
   // Create reset url
-  const confirmEmailURL = `${req.protocol}://${req.get(
-    'host'
-  )}/api/v1/auth/confirmemail?token=${confirmEmailToken}`;
+  // const confirmEmailURL = `${req.protocol}://${req.get(
+  //   'host'
+  // )}/api/v1/auth/confirmemail?token=${confirmEmailToken}`;
 
-  const message = `You are receiving this email because you need to confirm your email address. Please make a GET request to: \n\n ${confirmEmailURL}`;
+  // const message = `You are receiving this email because you need to confirm your email address. Please make a GET request to: \n\n ${confirmEmailURL}`;
 
-  user.save({ validateBeforeSave: false });
+  // user.save({ validateBeforeSave: false });
 
-  const sendResult = await sendEmail({
-    email: user.email,
-    subject: 'Email confirmation token',
-    message,
-  });
+  // const sendResult = await sendEmail({
+  //   email: user.email,
+  //   subject: 'Email confirmation token',
+  //   message,
+  // });
 
   sendTokenResponse(user, 200, res);
 });
